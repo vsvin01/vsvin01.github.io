@@ -1,0 +1,264 @@
+/* CSS Reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* Navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation bar : Logo and image  */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 500px;
+}
+
+/* Navigation bar : List Styling */
+/* #navbar {position: relative;
+} */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 0;  */
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 412px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+
+    content: "";
+    position: absolute;
+    background: url(https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg?w=1060&t=st=1688665046~exp=1688665646~hmac=3e1f020f06e2df500e8fbaa616b929facbd2dbeb424f2298115671217a765d0a) no-repeat center center/cover;
+    width: 100%;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    margin-top: 20px;
+    /* padding-right: 200px; */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    /* padding-right: 200px; */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Services Section  */
+#services {
+    margin: 4px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 4px;
+    margin: 10px 5px;
+    border-radius: 23px;
+    background: #f2f2f2;
+}
+
+#services .box img {
+    /* height: 106px; */
+    width: 120px;
+    margin: auto;
+    display: block;
+}
+
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Client section */
+#client-section {
+    /* position: absolute;
+     top: 0px; */
+    /* height: 354px; */
+    position: relative;
+    z-index: -1;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(https://as2.ftcdn.net/v2/jpg/03/11/59/83/1000_F_311598304_fdudXPNJgsUMybT1UAEwjHslW3LBq91L.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#clients img {
+    width: 66px;
+    padding: 6px;
+
+}
+
+.client-item {
+    padding: 30px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_1280.jpg)no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    padding: 9px 20px;
+    font-size: 30px;
+}
+
+/* Utility Classes */
+.h1home {
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-primary {
+    margin: 20px;
+    /* padding-top: 600px ; */
+    font-size: 30px;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+.btn {
+    padding: 6px 10px;
+    border: 2px solid white;
+    background-color: crimson;
+    color: white;
+    margin: 7px;
+    /* margin-right: 200px; */
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.center {
+    text-align: center;
+}
